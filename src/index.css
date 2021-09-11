@@ -20,6 +20,7 @@ body {
   font-family: var(--font-primary);
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 #root {
