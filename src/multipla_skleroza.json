@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "FaExclamationCircle",
+    "title": "Uzrok",
+    "text": " Iako tačan uzrok MS još uvek nije sasvim jasan..."
+  },
+  {
+    "id": 2,
+    "icon": "<FaCalendarCheck size={50} />",
+    "title": "Forme i tok bolesti",
+    "text": " Postoji nekoliko osnovnih formi MS..."
+  },
+  {
+    "id": 3,
+    "icon": "<FaExclamationTriangle size={50} />",
+    "title": "Simptomi I znaci",
+    "text": "MS je kompleksna bolest, i ima mnoge simptome..."
+  },
+  {
+    "id": 4,
+    "icon": "<FaRedoAlt size={50} />",
+    "title": "Dijagnoza",
+    "text": "Nekada je teško tačno utvrditi početak bolesti..."
+  },
+  {
+    "id": 5,
+    "icon": " <FaPills size={50} />",
+    "title": "Terapija",
+    "text": "Farmakološka i nefarmakološka terapija..."
+  },
+  {
+    "id": 6,
+    "icon": "<FaPhone size={50} />",
+    "title": "Kontaktirajte nas",
+    "text": "Lorem ipsum dolor sit amet, consecte adipiscing elit."
+  }
+]

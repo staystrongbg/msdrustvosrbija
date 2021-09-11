@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "link": "pocetna",
+    "path": "/"
+  },
+  {
+    "id": 2,
+    "link": "vesti",
+    "path": "/vesti"
+  },
+  {
+    "id": 3,
+    "link": "o nama",
+    "path": "/about"
+  },
+  {
+    "id": 4,
+    "link": "multipla skleroza",
+    "path": "/multiplaskleroza"
+  },
+  {
+    "id": 5,
+    "link": "zakon",
+    "path": "/zakon"
+  },
+  {
+    "id": 6,
+    "link": "multimedija i publikacije",
+    "path": "/multimedija"
+  },
+  {
+    "id": 7,
+    "sublinks": ["publikacije", "plakati", "spotovi"],
+    "path": ""
+  },
+  {
+    "id": 8,
+    "link": "savetovaliste",
+    "path": "/savetovaliste"
+  },
+  {
+    "id": 9,
+    "link": "clanstvo",
+    "path": "clanstvo"
+  },
+  {
+    "id": 10,
+    "link": "kontakt",
+    "path": "/kontakt"
+  }
+]
