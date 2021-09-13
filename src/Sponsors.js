@@ -13,6 +13,7 @@ const Sponsors = () => {
   return (
     <div>
       <div
+        className='sponsors'
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -24,7 +25,7 @@ const Sponsors = () => {
         {sponsors.map((sponsor) => (
           <img
             key={sponsor}
-            style={{ width: '200px' }}
+            style={{ width: '160px' }}
             src={`./images/${sponsor}.jpg`}
             alt={sponsor}
           />

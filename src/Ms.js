@@ -17,9 +17,9 @@ const Ms = () => {
           textTransform: 'uppercase',
           color: '#444',
           position: 'relative',
-          display: 'inline-block',
-          margin: '0 50%',
-          transform: 'translateX(-50%)',
+          // display: 'flex',
+          // margin: '0 50%',
+          // transform: 'translateX(-50%)',
           whiteSpace: 'nowrap',
         }}
       >

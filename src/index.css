@@ -39,6 +39,7 @@ body {
   color: var(--white);
   position: relative;
   height: 100px;
+  width: 100%;
 }
 .nav-links {
   display: flex;
@@ -262,10 +263,16 @@ svg:hover {
   .main-logo {
     width: 120px;
   }
+  .ms {
+    grid-template-columns: 1fr;
+  }
   #najnovije {
     flex-direction: column;
   }
   .foot-p {
     font-size: 14px;
+  }
+  .sponsors img {
+    width: 120px;
   }
 }
