@@ -273,7 +273,17 @@ svg:hover {
   .foot-p {
     font-size: 14px;
   }
+  #footer-logo {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  .foot img {
+    width: 150px;
+  }
   .sponsors img {
     width: 120px;
+  }
+  .nav-logo {
+    display: none;
   }
 }
