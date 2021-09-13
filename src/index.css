@@ -90,6 +90,7 @@ body {
   gap: 1rem;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 
 .sublink {
@@ -119,7 +120,7 @@ a {
 }
 
 svg {
-  color: #fedf8b;
+  color: var(--yellow);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
