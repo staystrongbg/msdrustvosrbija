@@ -1,4 +1,4 @@
-import { Link, useRouteMatch, useParams } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 import { useGlobalContext } from './context';
 const Vesti = () => {
   const { vesti } = useGlobalContext();

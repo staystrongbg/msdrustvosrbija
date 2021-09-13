@@ -113,6 +113,9 @@ a {
   /* text-align: center; */
   min-height: 30vh;
 }
+.error {
+  background-image: url('./error404.webp');
+}
 
 svg {
   color: #fedf8b;

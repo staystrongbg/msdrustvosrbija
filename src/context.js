@@ -1,7 +1,6 @@
 import { useContext, createContext, useState } from 'react';
 import data from './data.json';
 import vesti from './vesti.json';
-import ms from './multipla_skleroza.json';
 
 const AppContext = createContext();
 
@@ -42,7 +41,6 @@ const AppProvider = ({ children }) => {
         setShowSublinks,
         data,
         vesti,
-        ms,
         index,
         setIndex,
         checkIndex,

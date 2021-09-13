@@ -1,10 +1,8 @@
-import { Link, useParams, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useGlobalContext } from './context';
 
 const Vest = () => {
-  console.log(useParams(), useRouteMatch());
   const { vesti } = useGlobalContext();
-
   const sortVesti = vesti.sort((a, b) => a.date.year > b.date.year);
 
   const latest = sortVesti.slice(sortVesti.length - 2, sortVesti.length);
