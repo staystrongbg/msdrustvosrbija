@@ -6,6 +6,7 @@ const Footer = () => {
         style={{
           transform: 'rotate(180deg)',
           display: 'flex',
+          gap: '20px',
           justifyContent: 'space-evenly',
           alignitems: 'center',
           width: '100%',
