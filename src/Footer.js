@@ -13,7 +13,7 @@ const Footer = () => {
         }}
       >
         <div style={{ textAlign: 'center' }}>
-          <img src={logo} style={{ width: '200px' }} alt='' />
+          <img id='foot-img' src={logo} alt='' />
           <p id='footer-logo' style={{ textAlign: 'center' }}>
             DRUSTVO
             <br /> MULTIPLE SKLEROZE
