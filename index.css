@@ -233,6 +233,9 @@ svg:hover {
 .foot-p {
   font-size: 1vw;
 }
+#foot-img {
+  width: 200px;
+}
 
 @keyframes fade-in {
   from {
@@ -277,7 +280,7 @@ svg:hover {
     font-size: 5vw;
     line-height: 5vw;
   }
-  .foot img {
+  #foot-img {
     width: 150px;
   }
   .sponsors img {
