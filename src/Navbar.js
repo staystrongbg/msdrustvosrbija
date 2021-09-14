@@ -1,48 +1,61 @@
-import logo from './logo.png';
-import Sidebar from './Sidebar';
-import { FaBars } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-
-import { useGlobalContext } from './context';
+import React, { useState, useRef, useEffect } from 'react';
+import { FaBars, FaTwitter } from 'react-icons/fa';
+import { links, social } from './data';
+import logo from './logo.svg';
 
 const Navbar = () => {
-  const { showSidebar, setShowSidebar, data } = useGlobalContext();
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
+
   return (
-    <>
-      <nav className='navigation'>
-        <Sidebar data={data} logo={logo} />
-        <div className='nav-logo'>
-          <img
-            src={logo}
-            style={{
-              width: '80px',
-              position: 'absolute',
-              left: '10px',
-              top: '10px',
-              zIndex: '77',
+    <nav>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <img src={logo} className='logo' alt='logo' />
+          <button
+            onClick={() => {
+              setShowLinks(!showLinks);
             }}
-            alt='ms srbija logo'
-          />
+            className='nav-toggle'
+          >
+            <FaBars />
+          </button>
         </div>
 
-        <ul className='nav-links'>
-          {data.map((link) => (
-            <Link to={link.path} key={link.id}>
-              <li className='nav-link'>{link.link}</li>
-            </Link>
-          ))}
-        </ul>
+        <div className='links-container' ref={linksContainerRef}>
+          <ul className='links' ref={linksRef}>
+            {links.map(({ id, url, text }) => {
+              return (
+                <li key={id}>
+                  <a href={url}>{text}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
-        <FaBars
-          id='menu-icon'
-          style={{ zIndex: '55' }}
-          onClick={() => setShowSidebar(!showSidebar)}
-          size={25}
-        />
-      </nav>
-    </>
+        <ul className='social-icons'>
+          {social.map((link) => {
+            return (
+              <li key={link.id}>
+                <a href={link.url}>{link.icon}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </nav>
   );
 };
 
 export default Navbar;
-//ubaciti u data.json path properti da se postavi kao href za Linkove
