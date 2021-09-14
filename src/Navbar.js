@@ -16,9 +16,6 @@ const Navbar = () => {
             src={logo}
             style={{
               width: '80px',
-              // position: 'absolute',
-              // left: '10px',
-              // top: '10px',
               zIndex: '77',
             }}
             alt='ms srbija logo'

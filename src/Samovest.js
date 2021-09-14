@@ -19,7 +19,7 @@ const Samovest = () => {
     <>
       {loading && <Loading />}
       {vest && (
-        <div className='container'>
+        <div className='container' style={{ marginTop: '0' }}>
           <div className='vest-full'>
             <div className='img-container'>
               <img src={vest.img} alt='' />

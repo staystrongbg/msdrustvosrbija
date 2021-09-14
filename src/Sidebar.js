@@ -48,10 +48,14 @@ const Sidebar = ({ logo, data }) => {
                 onClick={
                   data.link === 'multimedija i publikacije'
                     ? handleSublinks
-                    : null
+                    : () => setShowSidebar(false)
                 }
               >
-                <Link to={data.path} style={{ color: '#444' }}>
+                <Link
+                  to={data.path}
+                  style={{ color: '#444' }}
+                  // onClick={() => setShowSidebar(false)}
+                >
                   {data.link}
                 </Link>
               </li>

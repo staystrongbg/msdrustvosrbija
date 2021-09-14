@@ -7,7 +7,7 @@ const Vest = () => {
   const { vesti, loading, setLoading } = useGlobalContext();
   const sortVesti = vesti.sort((a, b) => a.date.year > b.date.year);
 
-  const latest = sortVesti.slice(sortVesti.length - 2, sortVesti.length);
+  const latest = sortVesti.slice(sortVesti.length - 4, sortVesti.length);
 
   useEffect(() => {
     if (latest) {
