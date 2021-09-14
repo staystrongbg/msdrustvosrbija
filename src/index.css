@@ -210,9 +210,8 @@ svg:hover {
   border: 1px solid #eaeaea;
 }
 .vest:hover {
-  /* box-shadow: var(--shadow); */
+  box-shadow: var(--shadow);
   background-color: var(--white);
-  /* background-color: var(--secondary-color); */
 }
 .vest p {
   color: var(--grey);

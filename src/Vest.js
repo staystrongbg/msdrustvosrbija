@@ -7,7 +7,9 @@ const Vest = () => {
   const { vesti, loading, setLoading } = useGlobalContext();
   const sortVesti = vesti.sort((a, b) => a.date.year > b.date.year);
 
-  const latest = sortVesti.slice(sortVesti.length - 4, sortVesti.length);
+  const latest = sortVesti
+    .slice(sortVesti.length - 2, sortVesti.length)
+    .reverse();
 
   useEffect(() => {
     if (latest) {
@@ -42,9 +44,7 @@ const Vest = () => {
                 </div>
                 <div>
                   <p>
-                    {vest.date.day}
-                    {vest.date.month}
-                    {vest.date.year}
+                    {vest.date.day}. {vest.date.month}. {vest.date.year}
                   </p>
                   <h2>{vest.title}</h2>
                   <p>{vest.text}</p>
