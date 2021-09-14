@@ -1,14 +1,24 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react/cjs/react.development';
 import { useGlobalContext } from './context';
+import Loading from './Loading';
 
 const Vest = () => {
-  const { vesti } = useGlobalContext();
+  const { vesti, loading, setLoading } = useGlobalContext();
   const sortVesti = vesti.sort((a, b) => a.date.year > b.date.year);
 
   const latest = sortVesti.slice(sortVesti.length - 2, sortVesti.length);
 
+  useEffect(() => {
+    if (latest) {
+      setLoading(false);
+    }
+  }, []);
+
   return (
     <>
+      {loading && <Loading />}
       {latest &&
         latest.map((vest) => {
           return (

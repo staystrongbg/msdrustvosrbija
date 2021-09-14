@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [showSublinks, setShowSublinks] = useState(false);
   const [index, setIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   const handleSublinks = () => {
     console.log('multimedia');
@@ -48,6 +49,8 @@ const AppProvider = ({ children }) => {
         slideRight,
         handleSublinks,
         subKategorija,
+        loading,
+        setLoading,
       }}
     >
       {children}
