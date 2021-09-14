@@ -20,10 +20,14 @@ const Samovest = () => {
       {loading && <Loading />}
       {vest && (
         <div className='container'>
-          <img src={vest.img} alt='' />
-          <div>
-            <h2>{vest.title}</h2>
-            <p>{vest.text}</p>
+          <div className='vest-full'>
+            <div className='img-container'>
+              <img src={vest.img} alt='' />
+            </div>
+            <div className='vest-text'>
+              <h1>{vest.title}</h1>
+              <p>{vest.text}</p>
+            </div>
           </div>
         </div>
       )}

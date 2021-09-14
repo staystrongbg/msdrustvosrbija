@@ -39,7 +39,9 @@ const Vesti = () => {
                   borderRadius: '5px',
                 }}
               >
-                <img src={vest.img} alt='' />
+                <div className='thumbnail'>
+                  <img src={vest.img} alt='' />
+                </div>
                 <div>
                   <p>
                     {vest.date.day}. {vest.date.month}. {vest.date.year}
