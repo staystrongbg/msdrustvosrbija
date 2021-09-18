@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import logo from './logo.png';
 import Sidebar from './Sidebar';
 import { FaBars } from 'react-icons/fa';
@@ -7,9 +8,14 @@ import { useGlobalContext } from './context';
 
 const Navbar = () => {
   const { showSidebar, setShowSidebar, data } = useGlobalContext();
+  const [isScroll, setIsScroll] = useState(false);
+  window.onscroll = () => {
+    setIsScroll(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
   return (
     <>
-      <nav className='navigation'>
+      <nav className={isScroll ? 'navigation setFixedNav' : 'navigation'}>
         <Sidebar data={data} logo={logo} />
         <div className='nav-logo'>
           <img

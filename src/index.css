@@ -40,6 +40,18 @@ body {
   position: relative;
   height: 100px;
   width: 100%;
+  transition: ease 0.6s all;
+}
+.setFixedNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: var(--yellow);
+  z-index: 99;
+}
+.setFixedNav a {
+  color: var(--black);
 }
 .nav-links {
   display: flex;
@@ -77,7 +89,7 @@ body {
   left: 0;
   bottom: 0;
   transform: translateX(-120%);
-  transition: transform ease-in-out 0.2s;
+  transition: transform ease-out 0.2s;
   position: fixed;
   background-color: var(--white);
   font-family: var(--font-primary);
