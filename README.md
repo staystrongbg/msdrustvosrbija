@@ -1,3 +1,3 @@
 # live preview
 
-mssrbija.netlify.app
+- mssrbija.netlify.app
